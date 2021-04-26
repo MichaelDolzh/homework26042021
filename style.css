@@ -1,0 +1,35 @@
+.content5, .content20{
+    display: flex;
+    justify-content: space-around;
+}
+.content5 div, .content5_nof div,.content20 div, .content20_wr div{
+    width: 3vw;
+    height: 3vw;
+    background: #DA70D6;
+    border-radius: 50%;
+    margin: 1%;
+}
+.content5_nof div{
+    background: #7FFFD4;
+}
+.content20 div{
+    background: #FFA07A;
+}
+
+.content20_wr{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
+    justify-items: center;
+}
+.content20_wr div{
+    background: #7CFC00;
+}
+@media all and (max-width: 500px) {
+    .content20_wr{
+        grid-template-columns: 20% 20% 20% 20% 20% ;
+    }
+    .content20_wr div{
+        background: red;
+    }
+}
+
